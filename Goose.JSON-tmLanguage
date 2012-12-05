@@ -1,0 +1,43 @@
+{ "name": "Goose",
+  "scopeName": "source.gos",
+  "fileTypes": ["gos", "goose"],
+  "patterns": [
+    {
+      "name": "string.quoted.double.gos",
+      "match": "\".*\""
+    },{
+      "name": "string.interpolated.gos",
+      "begin": "`",
+      "end": "`"
+    },{
+      "name": "constant.numeric.gos",
+      "match": "\\d+|true|false"
+    },{
+      "name": "keyword.control.gos",
+      "match": "package|for|if|import|var|const|func|case|switch"
+    },{
+      "name": "keyword.other.gos",
+      "match": "interface|int|float|string|int16|uint32|float64|complex128|byte|bool"
+    },{
+      "name": "entity.name.function.gos",
+      "match": "main|struct|type"
+    },{
+      "name": "comment.line.gos",
+      "match": "\\/\\/.*$"
+    },{
+      "name": "comment.block.regexp.gos",
+      "begin": "/\\*",
+      "end": "\\*/"
+    },{
+      "name": "keyword.operator.gos",
+      "match": "\\+|-|\\=|<=|>=|<|>|\\*|\\/"
+    },{
+      "name": "entity.name.tag.gos",
+      "match": "\\.\\w+"
+    },{
+      "name": "constant.character.gos",
+      "match": "[\\(\\)\\[\\]\\{\\}]"
+    }
+  ],
+  "uuid": "b14421e4-33ea-4045-b37d-eded78d9b836"
+}
