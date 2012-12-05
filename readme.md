@@ -17,6 +17,7 @@ http://docs.sublimetext.info/en/latest/reference/syntaxdefs.html
 http://manual.macromates.com/en/language_grammars.html  
 http://manual.macromates.com/en/regular_expressions#regular_expressions  
 https://github.com/FichteFoll/AAAPackageDev/tree/enhanced_conversion  
+http://golang.org/ref/spec  
 
 
 ## Notice

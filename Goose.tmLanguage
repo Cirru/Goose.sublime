@@ -18,6 +18,12 @@
 			<string>string.quoted.double.gos</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>'.*'</string>
+			<key>name</key>
+			<string>string.quoted.single.gos</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>`</string>
 			<key>end</key>
@@ -27,19 +33,19 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\d+|true|false</string>
+			<string>true|false|(-?\d*[\d\.]\d*([eE][\+-]?\d*[\d\.]\d*)?)|((-?\d*[\d\.]\d*)?[\+-]?\d*[\d\.]\d*i)</string>
 			<key>name</key>
-			<string>constant.numeric.gos</string>
+			<string>constant.numer5ic.gos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>package|for|if|import|var|const|func|case|switch</string>
+			<string>break|default|func|interface|select|case|defer|go|map|struct|chan|else|goto|package|switch|const|fallthrough|if|range|type|continue|for|import|return|var</string>
 			<key>name</key>
 			<string>keyword.control.gos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>interface|int|float|string|int16|uint32|float64|complex128|byte|bool</string>
+			<string>uint8|uint16|uint32|uint64|int8|int16|int32|int64|float32|float64|complex64|complex128|byte|rune|int|uint|uintptr</string>
 			<key>name</key>
 			<string>keyword.other.gos</string>
 		</dict>
@@ -65,7 +71,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\+|-|\=|&lt;=|&gt;=|&lt;|&gt;|\*|\/</string>
+			<string>=|:=|\;|\|\|&amp;&amp;|==|\!=|&lt;|&lt;=|&gt;|&gt;=|\+|-|\||\^|\*|/|%|&lt;&lt;|&gt;&gt;|&amp;|&amp;\^|\!|&lt;-</string>
 			<key>name</key>
 			<string>keyword.operator.gos</string>
 		</dict>
