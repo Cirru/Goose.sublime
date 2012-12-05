@@ -13,18 +13,18 @@
       "begin": "`",
       "end": "`"
     },{
-      "name": "constant.numer5ic.gos",
-      "match": "true|false|(-?\\d*[\\d\\.]\\d*([eE][\\+-]?\\d*[\\d\\.]\\d*)?)|((-?\\d*[\\d\\.]\\d*)?[\\+-]?\\d*[\\d\\.]\\d*i)"
+      "name": "constant.numeric.gos",
+      "match": "(\\btrue\\b)|(\\bfalse\\b)|[\\+-]?\\d+i?|\\.\\d+|e\\d+"
     },{
       "name": "keyword.control.gos",
-      "match": "break|default|func|interface|select|case|defer|go|map|struct|chan|else|goto|package|switch|const|fallthrough|if|range|type|continue|for|import|return|var"
+      "match": "\\b(break|default|func|interface|select|case|defer|go|map|struct|chan|else|goto|package|switch|const|fallthrough|if|range|type|continue|for|import|return|var)\\b"
     },{
       "name": "keyword.other.gos",
-      "match": "uint8|uint16|uint32|uint64|int8|int16|int32|int64|float32|float64|complex64|complex128|byte|rune|int|uint|uintptr"
+      "match": "\\b(uint8|uint16|uint32|uint64|int8|int16|int32|int64|float32|float64|complex64|complex128|byte|rune|int|uint|uintptr)\\b"
 
     },{
       "name": "entity.name.function.gos",
-      "match": "main|struct|type"
+      "match": "\\b(main|struct|type)\\b"
     },{
       "name": "comment.line.gos",
       "match": "\\/\\/.*$"
@@ -36,11 +36,14 @@
       "name": "keyword.operator.gos",
       "match": "=|:=|\\;|\\|\\|&&|==|\\!=|<|<=|>|>=|\\+|-|\\||\\^|\\*|/|%|<<|>>|&|&\\^|\\!|<-"
     },{
-      "name": "entity.name.tag.gos",
+      "name": "entity.name.function.gos",
       "match": "\\.\\w+"
     },{
       "name": "constant.character.gos",
       "match": "[\\(\\)\\[\\]\\{\\}]"
+    },{
+      "name": "meta.gos",
+      "match": "\\w+\\d+"
     }
   ],
   "uuid": "b14421e4-33ea-4045-b37d-eded78d9b836"

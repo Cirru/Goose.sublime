@@ -33,25 +33,25 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>true|false|(-?\d*[\d\.]\d*([eE][\+-]?\d*[\d\.]\d*)?)|((-?\d*[\d\.]\d*)?[\+-]?\d*[\d\.]\d*i)</string>
+			<string>(\btrue\b)|(\bfalse\b)|[\+-]?\d+i?|\.\d+|e\d+</string>
 			<key>name</key>
-			<string>constant.numer5ic.gos</string>
+			<string>constant.numeric.gos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>break|default|func|interface|select|case|defer|go|map|struct|chan|else|goto|package|switch|const|fallthrough|if|range|type|continue|for|import|return|var</string>
+			<string>\b(break|default|func|interface|select|case|defer|go|map|struct|chan|else|goto|package|switch|const|fallthrough|if|range|type|continue|for|import|return|var)\b</string>
 			<key>name</key>
 			<string>keyword.control.gos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>uint8|uint16|uint32|uint64|int8|int16|int32|int64|float32|float64|complex64|complex128|byte|rune|int|uint|uintptr</string>
+			<string>\b(uint8|uint16|uint32|uint64|int8|int16|int32|int64|float32|float64|complex64|complex128|byte|rune|int|uint|uintptr)\b</string>
 			<key>name</key>
 			<string>keyword.other.gos</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>main|struct|type</string>
+			<string>\b(main|struct|type)\b</string>
 			<key>name</key>
 			<string>entity.name.function.gos</string>
 		</dict>
@@ -79,13 +79,19 @@
 			<key>match</key>
 			<string>\.\w+</string>
 			<key>name</key>
-			<string>entity.name.tag.gos</string>
+			<string>entity.name.function.gos</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>[\(\)\[\]\{\}]</string>
 			<key>name</key>
 			<string>constant.character.gos</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\w+\d+</string>
+			<key>name</key>
+			<string>meta.gos</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
