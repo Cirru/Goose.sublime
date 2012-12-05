@@ -45,7 +45,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(uint8|uint16|uint32|uint64|int8|int16|int32|int64|float32|float64|complex64|complex128|byte|rune|int|uint|uintptr)\b</string>
+			<string>\b(uint8|uint16|uint32|uint64|int8|int16|int32|int64|float32|float64|complex64|complex128|byte|rune|int|uint|uintptr|string|nil)\b</string>
 			<key>name</key>
 			<string>keyword.other.gos</string>
 		</dict>
@@ -89,7 +89,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\w+\d+</string>
+			<string>\b\w+\d+\b</string>
 			<key>name</key>
 			<string>meta.gos</string>
 		</dict>

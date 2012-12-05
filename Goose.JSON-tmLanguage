@@ -20,7 +20,7 @@
       "match": "\\b(break|default|func|interface|select|case|defer|go|map|struct|chan|else|goto|package|switch|const|fallthrough|if|range|type|continue|for|import|return|var)\\b"
     },{
       "name": "keyword.other.gos",
-      "match": "\\b(uint8|uint16|uint32|uint64|int8|int16|int32|int64|float32|float64|complex64|complex128|byte|rune|int|uint|uintptr)\\b"
+      "match": "\\b(uint8|uint16|uint32|uint64|int8|int16|int32|int64|float32|float64|complex64|complex128|byte|rune|int|uint|uintptr|string|nil)\\b"
 
     },{
       "name": "entity.name.function.gos",
@@ -43,7 +43,7 @@
       "match": "[\\(\\)\\[\\]\\{\\}]"
     },{
       "name": "meta.gos",
-      "match": "\\w+\\d+"
+      "match": "\\b\\w+\\d+\\b"
     }
   ],
   "uuid": "b14421e4-33ea-4045-b37d-eded78d9b836"
